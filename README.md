@@ -96,8 +96,7 @@ Discover real-world websites with LFI vulnerabilities for testing and learning:
 
 ```
     /bmes.lk/....
-    
-    \.com
+    /daph.cp.gov.lk/...
 
 ```
 
