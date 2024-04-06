@@ -1,6 +1,6 @@
-# 🛡️ LFI Vulnerability Examples Repository
+# 🛡️ LFI Vulnerability Repository
 
-Welcome to the LFI Vulnerability Examples repository! This comprehensive guide will provide you with everything you need to understand, explore, and mitigate Local File Inclusion (LFI) vulnerabilities in web applications. Whether you're a cybersecurity enthusiast, a web developer, or simply curious about web security, this repository is your ultimate resource.
+Welcome to the LFI Vulnerability  repository! This comprehensive guide will provide you with everything you need to understand, explore, and mitigate Local File Inclusion (LFI) vulnerabilities in web applications. Whether you're a cybersecurity enthusiast, a web developer, or simply curious about web security, this repository is your ultimate resource.
 
 ## 🚀 Dive into the World of LFI Vulnerabilities
 
