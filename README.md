@@ -32,6 +32,26 @@ readfile($file);
 ?>
 ```
 
+```php
+<?php
+$file = $_GET['file'];
+$allowed_files = array("down.php", "config.php", "index.php"); // Define an array of allowed files
+if (in_array($file, $allowed_files)) { // Check if the requested file is in the allowed list
+    header("Cache-Control: public");
+    header("Content-Description: File Transfer");
+    header("Content-Type: application/octet-stream");
+    header("Content-Transfer-Encoding: binary");
+    header("Content-disposition: attachment; filename=$file");
+    readfile($file);
+} else {
+    echo "Invalid file requested."; // Output an error message if the requested file is not allowed
+}
+?>
+```
+
+In the updated code, we have introduced an array `$allowed_files` containing the names of files that are allowed to be accessed. Before serving the requested file, we check if it exists in the `$allowed_files` array. If it does, the file is served; otherwise, an error message is displayed. This approach helps mitigate the risk of LFI vulnerabilities by restricting access to only whitelisted files.
+
+
 ## 🛡️ Mitigation Strategies
 
 Implement robust mitigation strategies to safeguard your web applications against LFI vulnerabilities:
