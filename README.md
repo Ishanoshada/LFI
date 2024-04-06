@@ -36,17 +36,30 @@ readfile($file);
 <?php
 $file = $_GET['file'];
 $allowed_files = array("down.php", "config.php", "index.php"); // Define an array of allowed files
-if (in_array($file, $allowed_files)) { // Check if the requested file is in the allowed list
-    header("Cache-Control: public");
-    header("Content-Description: File Transfer");
-    header("Content-Type: application/octet-stream");
-    header("Content-Transfer-Encoding: binary");
-    header("Content-disposition: attachment; filename=$file");
-    readfile($file);
+$file_path = "./files/{$file}"; // Assuming files are stored in a directory called "files"
+
+// Check if the requested file is in the allowed list and exists
+if (in_array($file, $allowed_files) && file_exists($file_path)) {
+    // Check if the requested file is within the "files" directory to prevent directory traversal attacks
+    if (strpos(realpath($file_path), realpath('./files')) === 0) {
+        // Set appropriate headers for file download
+        header("Cache-Control: public");
+        header("Content-Description: File Transfer");
+        header("Content-Type: application/octet-stream");
+        header("Content-Transfer-Encoding: binary");
+        header("Content-disposition: attachment; filename={$file}");
+        
+        // Output the file content
+        readfile($file_path);
+        exit; // Terminate the script after file download
+    } else {
+        echo "Access Denied."; // Output an error message if file path is outside the allowed directory
+    }
 } else {
-    echo "Invalid file requested."; // Output an error message if the requested file is not allowed
+    echo "Invalid file requested."; // Output an error message if the requested file is not allowed or doesn't exist
 }
 ?>
+
 ```
 
 In the updated code, we have introduced an array `$allowed_files` containing the names of files that are allowed to be accessed. Before serving the requested file, we check if it exists in the `$allowed_files` array. If it does, the file is served; otherwise, an error message is displayed. This approach helps mitigate the risk of LFI vulnerabilities by restricting access to only whitelisted files.
