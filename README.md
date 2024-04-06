@@ -90,7 +90,7 @@ Discover advanced techniques employed by attackers to exploit LFI vulnerabilitie
 Explore LFI vulnerabilities in action:
 
 ```
-http://example.com/download.php?file=down.php
+http://example.com/download.php?file=/etc/passwd
 ```
 
 ## 🌐 Vulnerable Websites
