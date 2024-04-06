@@ -1,5 +1,7 @@
 # 🛡️ LFI Vulnerability Repository
 
+Give us a ⭐️ if you find this project helpful!
+
 Welcome to the LFI Vulnerability  repository! This comprehensive guide will provide you with everything you need to understand, explore, and mitigate Local File Inclusion (LFI) vulnerabilities in web applications. Whether you're a cybersecurity enthusiast, a web developer, or simply curious about web security, this repository is your ultimate resource.
 
 ## 🚀 Dive into the World of LFI Vulnerabilities
@@ -120,5 +122,7 @@ Contributions are welcome! If you have additional examples, mitigation strategie
 This repository is licensed under the  GPL-3.0 license. See the [LICENSE](LICENSE) file for details.
 
 ---
+
+**Repository Views** ![Views](https://profile-counter.glitch.me/LFI/count.svg)
 
 Thank you for exploring the LFI Vulnerability Examples repository. Let's work together to strengthen web security and protect against cyber threats. Happy coding and stay secure! 🛡️🌐
