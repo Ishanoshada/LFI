@@ -101,6 +101,8 @@ Discover real-world websites with LFI vulnerabilities for testing and learning:
 
 ```
 
+Explore the source code of these vulnerable websites to understand how LFI vulnerabilities can be present in real-world web applications. Remember to use them for educational and research purposes only.
+
 ## 🤝 Contributing
 
 Contributions are welcome! If you have additional examples, mitigation strategies, or improvements, feel free to submit a pull request and join the community effort to enhance web security awareness.
