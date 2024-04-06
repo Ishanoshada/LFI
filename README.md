@@ -95,8 +95,8 @@ http://example.com/download.php?file=down.php
 Discover real-world websites with LFI vulnerabilities for testing and learning:
 
 ```
-    \.com
-    \.com
+    /bmes.lk/....
+    
     \.com
 
 ```
