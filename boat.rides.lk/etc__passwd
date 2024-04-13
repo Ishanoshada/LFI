@@ -1,0 +1,27 @@
+root:x:0:0:root:/root:/bin/bash
+cpaneleximfilter:x:993:989::/var/cpanel/userhomes/cpaneleximfilter:/usr/local/cpanel/bin/noshell
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+mailnull:x:47:47:Exim:/var/spool/mqueue:/bin/false
+mailman:x:206:206::/usr/local/cpanel/3rdparty/mailman:/usr/local/cpanel/bin/noshell
+nobody:x:99:99:Nobody:/:/sbin/nologin
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+avahi-autoipd:x:170:170:Avahi IPv4LL Stack:/var/lib/avahi-autoipd:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+named:x:25:25:Named:/var/named:/sbin/nologin
+nscd:x:28:28:NSCD Daemon:/:/sbin/nologin
+dovecot:x:97:97:Dovecot IMAP server:/usr/libexec/dovecot:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+mysql:x:995:992:MySQL server:/var/lib/mysql:/bin/bash
+rideslk:x:2206:2210::/home/rideslk:/usr/local/cpanel/bin/noshell
